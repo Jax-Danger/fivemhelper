@@ -1,0 +1,34 @@
+{
+  "name": "@jaxdanger/fivemhelper",
+  "version": "1.0.18",
+  "description": "A Fivem Utility to provide helpful functions to make fivem development in javascript easier.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "Jax Danger",
+  "license": "MIT",
+  "type": "commonjs",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+		"watch": "npx webpack --watch",
+    "build": "npx webpack && tsc && npm link",
+    "build-and-publish": "npx webpack && tsc && npm version patch && npm publish"
+  },
+  "keywords": [
+    "FiveM",
+    "Javascript",
+    "Typescript",
+    "FiveM Utility"
+  ],
+  "devDependencies": {
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.8.3",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^4.10"
+  },
+  "dependencies": {
+    "@citizenfx/client": "^2.0.15859-1",
+    "@citizenfx/server": "^2.0.14862-1"
+  }
+}
